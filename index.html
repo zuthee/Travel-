@@ -23,25 +23,25 @@
         <section class="one">
             <div class="d-flex justify-content-start align-items-center container" style="height: 100vh;">
                 <div class="text-content" style="flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; height: 100%;">
-                    <p class="main" style="color:#66BCFF; font-size:7rem;">TRAVEL</p>
-                    <p class="content" style="font-size:1.2rem;">Lorem ipsum dolor sit amet consectetur adipisicing <br> cupiditate amet! Rerum adipisci blanditiis illo <br> dicta ex possimus cumque sapiente delectus </p>
-                    <div class="social-icons" style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
+                    <p class="main hidden"  style="color:#66BCFF; font-size:7rem;">TRAVEL</p>
+                    <p class="content hidden" style="font-size:1.2rem;">Lorem ipsum dolor sit amet consectetur adipisicing <br> cupiditate amet! Rerum adipisci blanditiis illo <br> dicta ex possimus cumque sapiente delectus </p>
+                    <div class="social-icons hidden" style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
                         <i class="bi bi-github fs-1" style="color: #ADADAD;"></i>
                         <i class="bi bi-google fs-1" style="color: #ADADAD;"></i>
                         <i class="bi bi-facebook fs-1" style="color: #ADADAD;"></i>
                         <i class="bi bi-instagram fs-1" style="color: #ADADAD;"></i>
                     </div>
                 </div>                
-                <img src="img/3.png" alt="">
+                <img src="img/3.png" class="image-hover" alt="">
             </div>
         </section>
         
         <section class="two" style="background-color: #F9F9F9;">
             <div class="d-flex justify-content-start align-items-center container" style="height: 100vh;">
-                <img src="img/1.png" alt="" srcset="">
+                <img src="img/1.png" class="image-hover" alt="" srcset="">
                 <div class="text-content" style="flex: 1; font-size:7rem;">
-                <h1 class="main text-center" style="color:#85E57A; font-size:7rem;" >JAPANTRIP</h1>
-                <p class="content text-center" style=" font-size: 1.2rem; color: #B2B2B2;">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> perspiciatis ut, nemo harum iste,</p>
+                <h1 class="main text-center hidden " style="color:#85E57A; font-size:7rem;" >JAPANTRIP</h1>
+                <p class="content text-center hidden" style=" font-size: 1.2rem; color: #B2B2B2;">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> perspiciatis ut, nemo harum iste,</p>
                </div>
             </div>
         </section>
@@ -49,18 +49,18 @@
         <section class="three">
             <div class="d-flex justify-content-start align-items-center container" style="height: 100vh;">
                 <div class="text-content" style="flex: 1;">
-                    <h1 class="main text-center" style="color: #FFCD57; font-size:7rem;" >FLASH SALE <br> TICKET 25%</h1>
-                    <p class="content text-center" style="font-size: 1.2rem;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                    <h1 class="main text-center hidden" style="color: #FFCD57; font-size:7rem;" >FLASH SALE <br> TICKET 25%</h1>
+                    <p class="content text-center hidden" style="font-size: 1.2rem;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
                 </div>
-                <img src="img/2.png" alt="" srcset="" style="max-width: 50%; height: auto; margin-right: 30px;">
+                <img src="img/2.png" class="image-hover" alt="" srcset="" style="max-width: 50%; height: auto; margin-right: 30px;">
             </div>
         </section>
 
         <section class="four" style="background-color: #66BCFF;">
             <div class="d-flex justify-content-start align-items-center container" style="height: 100vh;">
-                <img src="img/5.png" alt="" style="max-width: 50%; height: auto; margin-right: 30px;">
-                <div class="text-content" style="flex: 1;">
-                    <h1 class="main text-start" style="text-align: center; color:white; font-size:7rem;">HOKKAIDO</h1>
+                <img src="img/5.png" class="image-hover" alt="" style="max-width: 50%; height: auto; margin-right: 30px;">
+                <div class="text-content hidden" style="flex: 1;">
+                    <h1 class="main text-start hidden"  style="text-align: center; color:white; font-size:7rem;">HOKKAIDO</h1>
                     <p class="content" style="font-size: 1.2rem; color:white; ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Esse aliquid, cum, corporis officia ipsam hic br consequatur <br> magni  eaque consectetur consectetur adipisicing </p>
                 </div>
             </div>
@@ -70,10 +70,10 @@
         <section class="five">
             <div class="d-flex justify-content-start align-items-center container" style="height: 100vh;">
                 <div class="text-content" style="flex: 1;">
-                <h1 class="main text-center" style="font-size:7rem;">CARFORTRIP</h1>
-                <p class="content text-center" style="font-size: 1.2rem; color: #B2B2B2;">Lorem ipsum dolor sit amet consectetur adipisicing <br>  Optio ipsa voluptas nemo reprehenderit explicabo nihil <br> sint ipsum possimus quod perspiciatis! ipsa  nemo</p>
+                <h1 class="main text-center hidden" style="font-size:7rem;">CARFORTRIP</h1>
+                <p class="content text-center hidden" style="font-size: 1.2rem; color: #B2B2B2;">Lorem ipsum dolor sit amet consectetur adipisicing <br>  Optio ipsa voluptas nemo reprehenderit explicabo nihil <br> sint ipsum possimus quod perspiciatis! ipsa  nemo</p>
                </div>
-               <img src="img/4.png" alt="" srcset="">
+               <img src="img/4.png"  class="image-hover" alt="" srcset="">
             </div>
         </section>
     </main>
@@ -81,6 +81,20 @@
     <footer>
         <p class="footer"> Copyright 2025 Sutheemon Wongchan |  Developer</p>
     </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+              }
+            });
+          });
+          
+          const elements = document.querySelectorAll('.hidden');
+          elements.forEach((el) => observer.observe(el));
+          
+    </script>
 
 </body>
 </html>
